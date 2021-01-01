@@ -1,8 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Client.dir/main.cpp.o"
-  "Client.exe"
+  "CMakeFiles/Client.dir/src/BGRSClient.cpp.o"
+  "CMakeFiles/Client.dir/src/readFromKB.cpp.o"
+  "CMakeFiles/Client.dir/src/readFromSock.cpp.o"
+  "Client"
   "Client.pdb"
-  "libClient.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

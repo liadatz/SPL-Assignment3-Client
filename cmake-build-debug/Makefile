@@ -59,19 +59,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/ASUS/AppData/Local/JetBrains/CLion2020.2/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/ASUS/AppData/Local/JetBrains/CLion2020.2/cygwin_cmake/bin/cmake.exe -E rm -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/c/Users/ASUS/IntelliJProjects/Assignment3/Client
+CMAKE_SOURCE_DIR = /Users/omer/Desktop/SPL-Assignment3-Client
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/c/Users/ASUS/IntelliJProjects/Assignment3/Client/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/omer/Desktop/SPL-Assignment3-Client/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,7 +79,7 @@ CMAKE_BINARY_DIR = /cygdrive/c/Users/ASUS/IntelliJProjects/Assignment3/Client/cm
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/cygdrive/c/Users/ASUS/AppData/Local/JetBrains/CLion2020.2/cygwin_cmake/bin/cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -90,7 +90,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/cygdrive/c/Users/ASUS/AppData/Local/JetBrains/CLion2020.2/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/ASUS/IntelliJProjects/Assignment3/Client/cmake-build-debug/CMakeFiles /cygdrive/c/Users/ASUS/IntelliJProjects/Assignment3/Client/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/omer/Desktop/SPL-Assignment3-Client/cmake-build-debug/CMakeFiles /Users/omer/Desktop/SPL-Assignment3-Client/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/ASUS/IntelliJProjects/Assignment3/Client/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/omer/Desktop/SPL-Assignment3-Client/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -170,6 +170,87 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/BGRSClient.o: src/BGRSClient.cpp.o
+
+.PHONY : src/BGRSClient.o
+
+# target to build an object file
+src/BGRSClient.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/BGRSClient.cpp.o
+.PHONY : src/BGRSClient.cpp.o
+
+src/BGRSClient.i: src/BGRSClient.cpp.i
+
+.PHONY : src/BGRSClient.i
+
+# target to preprocess a source file
+src/BGRSClient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/BGRSClient.cpp.i
+.PHONY : src/BGRSClient.cpp.i
+
+src/BGRSClient.s: src/BGRSClient.cpp.s
+
+.PHONY : src/BGRSClient.s
+
+# target to generate assembly for a file
+src/BGRSClient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/BGRSClient.cpp.s
+.PHONY : src/BGRSClient.cpp.s
+
+src/readFromKB.o: src/readFromKB.cpp.o
+
+.PHONY : src/readFromKB.o
+
+# target to build an object file
+src/readFromKB.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/readFromKB.cpp.o
+.PHONY : src/readFromKB.cpp.o
+
+src/readFromKB.i: src/readFromKB.cpp.i
+
+.PHONY : src/readFromKB.i
+
+# target to preprocess a source file
+src/readFromKB.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/readFromKB.cpp.i
+.PHONY : src/readFromKB.cpp.i
+
+src/readFromKB.s: src/readFromKB.cpp.s
+
+.PHONY : src/readFromKB.s
+
+# target to generate assembly for a file
+src/readFromKB.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/readFromKB.cpp.s
+.PHONY : src/readFromKB.cpp.s
+
+src/readFromSock.o: src/readFromSock.cpp.o
+
+.PHONY : src/readFromSock.o
+
+# target to build an object file
+src/readFromSock.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/readFromSock.cpp.o
+.PHONY : src/readFromSock.cpp.o
+
+src/readFromSock.i: src/readFromSock.cpp.i
+
+.PHONY : src/readFromSock.i
+
+# target to preprocess a source file
+src/readFromSock.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/readFromSock.cpp.i
+.PHONY : src/readFromSock.cpp.i
+
+src/readFromSock.s: src/readFromSock.cpp.s
+
+.PHONY : src/readFromSock.s
+
+# target to generate assembly for a file
+src/readFromSock.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/readFromSock.cpp.s
+.PHONY : src/readFromSock.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -182,6 +263,15 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/BGRSClient.o"
+	@echo "... src/BGRSClient.i"
+	@echo "... src/BGRSClient.s"
+	@echo "... src/readFromKB.o"
+	@echo "... src/readFromKB.i"
+	@echo "... src/readFromKB.s"
+	@echo "... src/readFromSock.o"
+	@echo "... src/readFromSock.i"
+	@echo "... src/readFromSock.s"
 .PHONY : help
 
 

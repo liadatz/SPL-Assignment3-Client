@@ -4,9 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/cygdrive/c/Users/ASUS/IntelliJProjects/Assignment3/Client/main.cpp" "/cygdrive/c/Users/ASUS/IntelliJProjects/Assignment3/Client/cmake-build-debug/CMakeFiles/Client.dir/main.cpp.o"
+  "/Users/omer/Desktop/SPL-Assignment3-Client/main.cpp" "/Users/omer/Desktop/SPL-Assignment3-Client/cmake-build-debug/CMakeFiles/Client.dir/main.cpp.o"
+  "/Users/omer/Desktop/SPL-Assignment3-Client/src/BGRSClient.cpp" "/Users/omer/Desktop/SPL-Assignment3-Client/cmake-build-debug/CMakeFiles/Client.dir/src/BGRSClient.cpp.o"
+  "/Users/omer/Desktop/SPL-Assignment3-Client/src/readFromKB.cpp" "/Users/omer/Desktop/SPL-Assignment3-Client/cmake-build-debug/CMakeFiles/Client.dir/src/readFromKB.cpp.o"
+  "/Users/omer/Desktop/SPL-Assignment3-Client/src/readFromSock.cpp" "/Users/omer/Desktop/SPL-Assignment3-Client/cmake-build-debug/CMakeFiles/Client.dir/src/readFromSock.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

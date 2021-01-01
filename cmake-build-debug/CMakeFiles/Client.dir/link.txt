@@ -1,1 +1,1 @@
-/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/Client.dir/main.cpp.o  -o Client.exe -Wl,--out-implib,libClient.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+/Library/Developer/CommandLineTools/usr/bin/c++  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/Client.dir/main.cpp.o CMakeFiles/Client.dir/src/readFromKB.cpp.o CMakeFiles/Client.dir/src/readFromSock.cpp.o CMakeFiles/Client.dir/src/BGRSClient.cpp.o  -o Client 
