@@ -16,9 +16,6 @@ void readFromKB::run() {
 
         const short bufsize = 1024;
         char buf[bufsize];
-//        short spaceLoc = 0;
-//        while (buf[spaceLoc] != ' ')
-//            spaceLoc++;
         cin.getline(buf, bufsize);
         string line(buf);
         vector <string> message;
@@ -32,19 +29,8 @@ void readFromKB::run() {
             handler.sendLine(message[2]);
         }
 
-
-//        std::string optCode(buf, spaceLoc);
-//        handler.sendLine(optCode, buf);
-
-
-
-        //handler.sendLine(line); //fix encoding
-
 }
 
-short readFromKB::codeToNumber(std::string basicString) {
-    return 0;
-}
 
 void readFromKB::shortToBytes(short num, char* bytesArr) {
     bytesArr[0] = ((num >> 8) & 0xFF);
