@@ -1,3 +1,3 @@
-/Users/omer/Desktop/SPL-Assignment3-Client/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/omer/Desktop/SPL-Assignment3-Client/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/omer/Desktop/SPL-Assignment3-Client/cmake-build-debug/CMakeFiles/Client.dir
+/home/spl211/CLionProjects/SPL-Assignment3-Client/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/spl211/CLionProjects/SPL-Assignment3-Client/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/spl211/CLionProjects/SPL-Assignment3-Client/cmake-build-debug/CMakeFiles/Client.dir

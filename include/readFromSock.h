@@ -10,8 +10,9 @@ private:
     int id;
     std::mutex &mutex;
     ConnectionHandler &handler;
+    bool* shouldTerminate;
 public:
-    readFromSock (int id, std::mutex& mutex, ConnectionHandler &handler);
+    readFromSock (int id, std::mutex& mutex, ConnectionHandler &handler, bool* shouldTerminate);
     void run();
 };
 

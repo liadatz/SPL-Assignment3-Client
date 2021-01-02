@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/omer/Desktop/SPL-Assignment3-Client/main.cpp" "/Users/omer/Desktop/SPL-Assignment3-Client/cmake-build-debug/CMakeFiles/Client.dir/main.cpp.o"
-  "/Users/omer/Desktop/SPL-Assignment3-Client/src/BGRSClient.cpp" "/Users/omer/Desktop/SPL-Assignment3-Client/cmake-build-debug/CMakeFiles/Client.dir/src/BGRSClient.cpp.o"
-  "/Users/omer/Desktop/SPL-Assignment3-Client/src/readFromKB.cpp" "/Users/omer/Desktop/SPL-Assignment3-Client/cmake-build-debug/CMakeFiles/Client.dir/src/readFromKB.cpp.o"
-  "/Users/omer/Desktop/SPL-Assignment3-Client/src/readFromSock.cpp" "/Users/omer/Desktop/SPL-Assignment3-Client/cmake-build-debug/CMakeFiles/Client.dir/src/readFromSock.cpp.o"
+  "/home/spl211/CLionProjects/SPL-Assignment3-Client/main.cpp" "/home/spl211/CLionProjects/SPL-Assignment3-Client/cmake-build-debug/CMakeFiles/Client.dir/main.cpp.o"
+  "/home/spl211/CLionProjects/SPL-Assignment3-Client/src/BGRSClient.cpp" "/home/spl211/CLionProjects/SPL-Assignment3-Client/cmake-build-debug/CMakeFiles/Client.dir/src/BGRSClient.cpp.o"
+  "/home/spl211/CLionProjects/SPL-Assignment3-Client/src/readFromKB.cpp" "/home/spl211/CLionProjects/SPL-Assignment3-Client/cmake-build-debug/CMakeFiles/Client.dir/src/readFromKB.cpp.o"
+  "/home/spl211/CLionProjects/SPL-Assignment3-Client/src/readFromSock.cpp" "/home/spl211/CLionProjects/SPL-Assignment3-Client/cmake-build-debug/CMakeFiles/Client.dir/src/readFromSock.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
