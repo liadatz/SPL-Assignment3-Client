@@ -10,7 +10,7 @@ int main(int argc, char *argv[]){
     std::mutex mutex;
     ConnectionHandler handler = ConnectionHandler(host, port);
     readFromKB task1(1, mutex, handler);
-    readFromSock task2(2, mutex);
+    readFromSock task2(2, mutex, handler);
 
     std::thread th1(&readFromKB::run, &task1);
     std::thread th2(&readFromSock::run, &task2);

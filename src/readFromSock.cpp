@@ -2,7 +2,7 @@
 #include "../include/readFromSock.h"
 #include <mutex>
 
-readFromSock::readFromSock(int id, std::mutex &mutex): _id(id), _mutex(mutex) {
+readFromSock::readFromSock(int id, std::mutex &mutex, ConnectionHandler &handler): id(id), mutex(mutex), handler(handler){
 
 }
 void readFromSock::run() {

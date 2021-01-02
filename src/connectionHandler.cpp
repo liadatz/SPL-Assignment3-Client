@@ -70,6 +70,7 @@ bool ConnectionHandler::getLine(std::string& line) {
 bool ConnectionHandler::sendLine(std::string& line) {
     return sendFrameAscii(line, '\n');
 }
+
  
 
 bool ConnectionHandler::getFrameAscii(std::string& frame, char delimiter) {

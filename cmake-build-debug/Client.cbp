@@ -80,6 +80,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/omer/Desktop/SPL-Assignment3-Client/include/BGRSClient.h">
+			<Option target="Client"/>
+		</Unit>
 		<Unit filename="/Users/omer/Desktop/SPL-Assignment3-Client/include/readFromKB.h">
 			<Option target="Client"/>
 		</Unit>
@@ -90,9 +93,6 @@
 			<Option target="Client"/>
 		</Unit>
 		<Unit filename="/Users/omer/Desktop/SPL-Assignment3-Client/src/BGRSClient.cpp">
-			<Option target="Client"/>
-		</Unit>
-		<Unit filename="/Users/omer/Desktop/SPL-Assignment3-Client/src/BGRSClient.h">
 			<Option target="Client"/>
 		</Unit>
 		<Unit filename="/Users/omer/Desktop/SPL-Assignment3-Client/src/readFromKB.cpp">
