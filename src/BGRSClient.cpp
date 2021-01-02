@@ -16,5 +16,6 @@ int main(int argc, char *argv[]){
     std::thread th2(&readFromSock::run, &task2);
     th1.join();
     th2.join();
+    delete shouldTerminate;
     return 0;
 }
