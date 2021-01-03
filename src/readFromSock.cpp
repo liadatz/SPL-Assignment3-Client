@@ -7,26 +7,32 @@ readFromSock::readFromSock(int id, std::mutex &mutex, ConnectionHandler &handler
 
 }
 void readFromSock::run() {
-    cout << "check FromSock" << endl;
     while (!(*shouldTerminate)) {
-        cout << "check FromSock2" << endl;
-        char answer[4];
-        handler.getBytes(answer, 4);
-        if (answer[1] == 3) {
-            string output = "ERROR ";
-            if (answer[2] != 0) output = output + answer[2] + output[3];
-            else output = output + answer[2];
-            cout << output << std::endl;
+        char message[2];
+        handler.getBytes(message, 2);
+        short opCode = bytesToShort(message);
+        if (opCode == 13) {
+            handler.getBytes(message, 2);
+            short messageOpCode = bytesToShort(message);
+            cout << "ERROR " << messageOpCode << std::endl;
         }
-        else {
-            cout << "ACK " << answer[2] << answer[3] << std::endl;
+        else if (opCode == 12){
+            handler.getBytes(message, 2);
+            short messageOpCode = bytesToShort(message);
+            cout << "ACK " << messageOpCode << std::endl;
             //print additional
             string optional;
             handler.getLine(optional);
             if (optional != "")
                 cout << optional << std::endl;
-            if (answer[2] == '4')
+            if (messageOpCode == 4)
                 *shouldTerminate = true;
         }
     }
+}
+
+short readFromSock::bytesToShort(char* bytesArr) {
+    short result = (short)((bytesArr[0] & 0xff) << 8);
+    result += (short)(bytesArr[1] & 0xff);
+    return result;
 }

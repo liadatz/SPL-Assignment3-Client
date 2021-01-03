@@ -14,6 +14,8 @@ private:
 public:
     readFromSock (int id, std::mutex& mutex, ConnectionHandler &handler, bool* shouldTerminate);
     void run();
+
+    short bytesToShort(char *bytesArr);
 };
 
 #endif //CLIENT_READFROMSOCK_H

@@ -10,9 +10,7 @@ using namespace std;
 readFromKB::readFromKB(int id, std::mutex &mutex, ConnectionHandler &handler, bool* shouldTerminate): id(id), mutex(mutex), handler(handler), shouldTerminate(shouldTerminate)  {}
 
 void readFromKB::run() {
-    cout << "check FromKB" << endl;
     while (!(*shouldTerminate)) {
-        cout << "check FromKB2" << endl;
         const short bufsize = 1024;
         char buf[bufsize];
         cin.getline(buf, bufsize);
@@ -88,7 +86,7 @@ void readFromKB::run() {
             shortToBytes(11, opCode);
             handler.sendBytes(opCode, 2);
         }
-        else cout << "Illegal command!"; // delete
+        else cout << "Illegal command!" << endl; // delete
     }
 }
 
