@@ -9,7 +9,7 @@
 #define CLIENT_BGRSCLIENT_H
 
 
-class BGRSClient {
+class Client {
 
 };
 

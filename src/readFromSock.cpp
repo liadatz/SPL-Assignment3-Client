@@ -1,4 +1,3 @@
-
 #include "../include/readFromSock.h"
 #include <mutex>
 using namespace std;
@@ -8,7 +7,9 @@ readFromSock::readFromSock(int id, std::mutex &mutex, ConnectionHandler &handler
 
 }
 void readFromSock::run() {
-    while (!shouldTerminate) {
+    cout << "check FromSock" << endl;
+    while (!(*shouldTerminate)) {
+        cout << "check FromSock2" << endl;
         char answer[4];
         handler.getBytes(answer, 4);
         if (answer[1] == 3) {

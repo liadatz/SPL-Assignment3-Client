@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Client.dir/main.cpp.o"
   "CMakeFiles/Client.dir/src/BGRSClient.cpp.o"
+  "CMakeFiles/Client.dir/src/connectionHandler.cpp.o"
   "CMakeFiles/Client.dir/src/readFromKB.cpp.o"
   "CMakeFiles/Client.dir/src/readFromSock.cpp.o"
   "Client"

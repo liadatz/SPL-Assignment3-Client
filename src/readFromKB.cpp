@@ -1,4 +1,3 @@
-
 #include "../include/readFromKB.h"
 #include <mutex>
 #include <iostream>
@@ -11,7 +10,9 @@ using namespace std;
 readFromKB::readFromKB(int id, std::mutex &mutex, ConnectionHandler &handler, bool* shouldTerminate): id(id), mutex(mutex), handler(handler), shouldTerminate(shouldTerminate)  {}
 
 void readFromKB::run() {
-    while (!shouldTerminate) {
+    cout << "check FromKB" << endl;
+    while (!(*shouldTerminate)) {
+        cout << "check FromKB2" << endl;
         const short bufsize = 1024;
         char buf[bufsize];
         cin.getline(buf, bufsize);
