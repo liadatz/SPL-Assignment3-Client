@@ -1,8 +1,9 @@
 cmake_minimum_required(VERSION 3.17)
 project(Client)
 
-find_package(Boost 1.58.0 REQUIRED COMPONENTS system filesystem)
-target_link_libraries(Client ${Boost_LIBRARIES})
+link_libraries("-lboost_system")
+link_libraries(-pthread)
+
 
 set(CMAKE_CXX_STANDARD 11)
 
@@ -14,5 +15,4 @@ add_executable(Client
         src/Client.cpp
         include/Client.h
         include/connectionHandler.h
-        src/connectionHandler.cpp
-        )
+        src/connectionHandler.cpp)

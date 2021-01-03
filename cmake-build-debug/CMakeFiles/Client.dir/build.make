@@ -103,18 +103,18 @@ CMakeFiles/Client.dir/src/readFromSock.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Client.dir/src/readFromSock.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/spl211/CLionProjects/SPL-Assignment3-Client/src/readFromSock.cpp -o CMakeFiles/Client.dir/src/readFromSock.cpp.s
 
-CMakeFiles/Client.dir/src/BGRSClient.cpp.o: CMakeFiles/Client.dir/flags.make
-CMakeFiles/Client.dir/src/BGRSClient.cpp.o: ../src/BGRSClient.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spl211/CLionProjects/SPL-Assignment3-Client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Client.dir/src/BGRSClient.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Client.dir/src/BGRSClient.cpp.o -c /home/spl211/CLionProjects/SPL-Assignment3-Client/src/BGRSClient.cpp
+CMakeFiles/Client.dir/src/Client.cpp.o: CMakeFiles/Client.dir/flags.make
+CMakeFiles/Client.dir/src/Client.cpp.o: ../src/Client.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spl211/CLionProjects/SPL-Assignment3-Client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Client.dir/src/Client.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Client.dir/src/Client.cpp.o -c /home/spl211/CLionProjects/SPL-Assignment3-Client/src/Client.cpp
 
-CMakeFiles/Client.dir/src/BGRSClient.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Client.dir/src/BGRSClient.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/spl211/CLionProjects/SPL-Assignment3-Client/src/BGRSClient.cpp > CMakeFiles/Client.dir/src/BGRSClient.cpp.i
+CMakeFiles/Client.dir/src/Client.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Client.dir/src/Client.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/spl211/CLionProjects/SPL-Assignment3-Client/src/Client.cpp > CMakeFiles/Client.dir/src/Client.cpp.i
 
-CMakeFiles/Client.dir/src/BGRSClient.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Client.dir/src/BGRSClient.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/spl211/CLionProjects/SPL-Assignment3-Client/src/BGRSClient.cpp -o CMakeFiles/Client.dir/src/BGRSClient.cpp.s
+CMakeFiles/Client.dir/src/Client.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Client.dir/src/Client.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/spl211/CLionProjects/SPL-Assignment3-Client/src/Client.cpp -o CMakeFiles/Client.dir/src/Client.cpp.s
 
 CMakeFiles/Client.dir/src/connectionHandler.cpp.o: CMakeFiles/Client.dir/flags.make
 CMakeFiles/Client.dir/src/connectionHandler.cpp.o: ../src/connectionHandler.cpp
@@ -133,7 +133,7 @@ CMakeFiles/Client.dir/src/connectionHandler.cpp.s: cmake_force
 Client_OBJECTS = \
 "CMakeFiles/Client.dir/src/readFromKB.cpp.o" \
 "CMakeFiles/Client.dir/src/readFromSock.cpp.o" \
-"CMakeFiles/Client.dir/src/BGRSClient.cpp.o" \
+"CMakeFiles/Client.dir/src/Client.cpp.o" \
 "CMakeFiles/Client.dir/src/connectionHandler.cpp.o"
 
 # External object files for target Client
@@ -141,7 +141,7 @@ Client_EXTERNAL_OBJECTS =
 
 Client: CMakeFiles/Client.dir/src/readFromKB.cpp.o
 Client: CMakeFiles/Client.dir/src/readFromSock.cpp.o
-Client: CMakeFiles/Client.dir/src/BGRSClient.cpp.o
+Client: CMakeFiles/Client.dir/src/Client.cpp.o
 Client: CMakeFiles/Client.dir/src/connectionHandler.cpp.o
 Client: CMakeFiles/Client.dir/build.make
 Client: CMakeFiles/Client.dir/link.txt

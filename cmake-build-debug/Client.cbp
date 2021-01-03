@@ -84,7 +84,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/spl211/CLionProjects/SPL-Assignment3-Client/include/BGRSClient.h">
+		<Unit filename="/home/spl211/CLionProjects/SPL-Assignment3-Client/include/Client.h">
 			<Option target="Client"/>
 		</Unit>
 		<Unit filename="/home/spl211/CLionProjects/SPL-Assignment3-Client/include/connectionHandler.h">
@@ -96,7 +96,7 @@
 		<Unit filename="/home/spl211/CLionProjects/SPL-Assignment3-Client/include/readFromSock.h">
 			<Option target="Client"/>
 		</Unit>
-		<Unit filename="/home/spl211/CLionProjects/SPL-Assignment3-Client/src/BGRSClient.cpp">
+		<Unit filename="/home/spl211/CLionProjects/SPL-Assignment3-Client/src/Client.cpp">
 			<Option target="Client"/>
 		</Unit>
 		<Unit filename="/home/spl211/CLionProjects/SPL-Assignment3-Client/src/connectionHandler.cpp">
