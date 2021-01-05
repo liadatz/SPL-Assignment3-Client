@@ -8,6 +8,7 @@ readFromSock::readFromSock(int id, std::mutex &mutex, ConnectionHandler &handler
 }
 void readFromSock::run() {
     while (!(*shouldTerminate)) {
+        mutex.try_lock();
         char message[2];
         handler.getBytes(message, 2);
         short opCode = bytesToShort(message);
@@ -15,6 +16,10 @@ void readFromSock::run() {
             handler.getBytes(message, 2);
             short messageOpCode = bytesToShort(message);
             cout << "ERROR " << messageOpCode << std::endl;
+            if (messageOpCode == 4) {
+                mutex.unlock();
+                sleep(0.00001);
+            }
         }
         else if (opCode == 12){
             handler.getBytes(message, 2);
@@ -25,8 +30,11 @@ void readFromSock::run() {
             handler.getLine(optional);
             if (optional != "")
                 cout << optional << std::endl;
-            if (messageOpCode == 4)
+            if (messageOpCode == 4) {
                 *shouldTerminate = true;
+                mutex.unlock();
+            }
+
         }
     }
 }

@@ -57,6 +57,8 @@ void readFromKB::run() {
             }
             shortToBytes(4, opCode);
             handler.sendBytes(opCode, 2);
+            mutex.lock();
+            mutex.unlock();
         }
         else if (message[0] == "COURSEREG") {
             if (message.size() != 2) {
