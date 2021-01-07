@@ -18,7 +18,7 @@ void readFromSock::run() {
             cout << "ERROR " << messageOpCode << std::endl;
             if (messageOpCode == 4) {
                 mutex.unlock();
-                sleep(0.00001);
+                sleep(1);
             }
         }
         else if (opCode == 12){
